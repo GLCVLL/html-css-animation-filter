@@ -147,3 +147,35 @@
     width: 60px;
     height: 20px;
 }
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: moveTopWhite 2s linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: moveBottomWhite 2s linear;
+}
+
+@keyframes moveTopWhite {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(60px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveBottomWhite {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-60px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
